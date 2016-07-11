@@ -27,6 +27,6 @@ public class MainActivity extends AppCompatActivity {
         settings.setJavaScriptEnabled(true);
         webView.loadUrl("file:///android_asset/index.html");
         //调用WebView关联的WebSettings中addJavaScriptInterface
-        webView.addJavascriptInterface(new MyObject(this,mlist),"lxx");
+        webView.addJavascriptInterface(new MyObject(this,mlist),"lxx");     //第一个是 对象的实例 第二个是对象名  “lxx”，在 js代码里使用
     }
 }
